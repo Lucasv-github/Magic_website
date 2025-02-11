@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #333; /* Dark background for the nav */
+    padding: 10px 20px; /* Padding around the nav */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center items horizontally */
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+
+nav ul li a:hover {
+    background-color: #555; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly enlarge the link */
+}
+
+nav ul li a.active {
+    background-color: #444; /* Darker background for active link */
+    font-weight: bold; /* Bold text for active link */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+.background {
+    height: 75vh;
+    background-image: url('background.png');
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #f1f1f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
